@@ -7,13 +7,24 @@ Para obtener el archivo `.war`, ingresaremos a la siguiente dirección :
    
    `http://geoserver.org/download/`  
 
+#### Instalación del Geoserver
+ Ahora procedemos a copiar el archivo `.war` al folder **webapps** dentro de **Tomcat** (tomcat/webapss)  
+  ```
+  sudo cp  geoserver.war root/tomcat/webapps/
+  ```
+
 ### Requerimientos Técnicos
    * Sistemas operativo Ubuntu
    * Servidor Tomcat  
 
-### Configuración del GEOSERVER
-  Primero procedemos a copiar el archivo `.war` al folder **webapps** dentro de **Tomcat**  
-  `cp  
+### Configuración del GEOSERVER  
+
+Con el GEOSERVER ya instalado sobre tomcat, por medio de un explorador web ingresamos la url `http://localhost:8080/geoserver/web`:  
+   
+   * Nos autenticamos por default con ***username*** : **admin** y **password** : **geoserver**  
+   * Por seguridad creamos un nuevo usuario  en *Security* -> *Users,Groups, and Roles* -> *Add new user*
+     y asignamos los roles de ADMIN y GROUP_ADMIN.
+   * Borramos las group-layers, layers, stores, styles y workspaces que vienen por default en el Geoserver en este orden.
   
 ## Construido con
 * [Geoserver][1] Lenguaje de programación
