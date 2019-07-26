@@ -54,7 +54,8 @@ Para obtener el archivo `.war`, ingresaremos a la siguiente dirección :
     sudo service tomcat start
    ```
    
-  **NOTA :** GeoSolitions nos ofrece una guía para poder hacer la instalación. [link][3]
+  **NOTA :** GeoSolutions nos ofrece una guía para poder hacer la instalación. [link][3]
+  
 ### Requerimientos Técnicos
    * Sistemas operativo Ubuntu
    * Servidor Tomcat  
