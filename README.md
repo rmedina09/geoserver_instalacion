@@ -36,7 +36,7 @@ Para obtener el archivo `.war`, ingresaremos a la siguiente dirección :
      sudo chmod u+x jai_imageio-1_1-lib-linux-amd64-jdk.bin  
      sudo ./jai_imageio-1_1-lib-linux-amd64-jdk.bin  
      ```
-   * En caso de que ocurra el siguiente error  `cannot open 215 for reading No such file or directory`
+   * En caso de que ocurra el siguiente error  `cannot open 215 for reading No such file or directory`  
      Se puede hacer lo siguiente 
      ```
      sudo cp jai_imageio-1_1-lib-linux-amd64-jdk.bin jai_imageio-1_1-lib-linux-amd64-jdk.bin.old  
