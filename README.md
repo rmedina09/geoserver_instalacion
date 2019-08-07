@@ -94,6 +94,9 @@ Editamos el archivo web.xml para agregar las configuraciones que listamos en seg
        <param-value>true</param-value>
      </context-param>
      ```
+ ### Optimizaciones
+ 
+ 
 ## Construido con
 * [Geoserver][4] GeoServer
 * [Tomcat][5] Servidor de aplicaciones
