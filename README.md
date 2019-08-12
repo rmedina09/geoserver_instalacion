@@ -75,7 +75,8 @@ Con el GEOSERVER ya instalado sobre tomcat, por medio de un explorador web ingre
      Y marcamos las casillas de *Enable direct integration with GeoServer WMS*, *Enable WMS-C Service* y *Enable TMS Service*
    * Cambiamos las opciones del **log** a **PRODUCTION**  
      En *Settings* -> *Global* -> *Internal Settings* -> *Logging Settings* y seleccionamos **PRODUCTION_LOGGING.properties**
-   * Cambiamos el numero máximo de "features" devueltas por WFS por 1000
+   * Cambiamos el numero máximo de "features" devueltas por WFS a 1000
+     *Services* -> *WFS* -> *Features* -> *Maximum number of features*
 
 #### Web.xml
 Editamos el archivo web.xml para agregar las configuraciones que listamos en seguida:
@@ -96,6 +97,16 @@ Editamos el archivo web.xml para agregar las configuraciones que listamos en seg
      ```
  ### Optimizaciones
  
+   * Seleccionamos el conjunto de caracteres **ISO-8859-1** para acentos :  
+     *Settings* -> *Global* -> *Service Response Settings* -> *Character Set* -> *ISO-8859-1*
+   * Limitamos a **4** el número de decimales : *Settings* -> *Global* -> *Service Response Settings* -> *Number of decimals*  
+   * Deshabilitamos los mensajes detallados: *Settings* -> *Global* -> *Service Response Settings*   
+   * Omitimos las capas mal configuradas: *Settings* -> *Global* -> *Service Error Settings* -> *Skipping misconfigured layers*  
+   * Cambiamos la localización del archivo **log** : *Settings* -> *Global* -> *Internal Settings* -> *Logging Settings* -> *Log location*  
+   * Modificamos el tamaño del cache a **200** para el tipo de característica : 
+        *Settings* -> *Global* -> *Internal Settings* -> *Catalog Settings* -> *Feature type cache size*  
+   * Habilitamos *Tile Recycling* : *Settings* -> *Image Processing* -> *Memory Use* -> *Tile Recycling*  
+
  
 ## Construido con
 * [Geoserver][4] GeoServer
